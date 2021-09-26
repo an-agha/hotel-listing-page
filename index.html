@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel listing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- top navbar web-->
+           <nav class="nav">
+            <img src="https://www.futurebuzz.mu/wp-content/uploads/2021/05/dummy-logo.png" alt="Logo" class="logo">
+            <div class="nav-input-container">
+                <div class="nav-input">
+                    <input type="text" placeholder="Search by city, hotel, or neighborhood" class="input">
+                    <img src="./Image/near_me.png" alt="location" class="input-icon">
+                </div>
+                <div class="nav-input">
+                        <input type="text" placeholder="Mon, 20 Sep - Tue, 21 Sep" class="input ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="date" class="input-icon">
+                </div>
+                <div class="nav-input" style="border-right: none;">
+                    <input type="text" placeholder="1 Room, 1 Guest" class="input">
+                </div>
+                <div class="nav-search-btn">
+                    <input type="submit" value="Search" class="input input-btn">
+                </div>
+            </div>
+            <div class="nav-link-container">
+                <div class="nav-link">
+                    <div class="round-card">
+                        <img src="./Image/glob-icon.png" alt="glob icon" class="glob-img">
+                    </div>
+                    <span class="link-txt" style="margin-top: -15px; font-size: 9pt">EN</span>
+                </div>
+                <div class="nav-link">
+                    <div class="round-card login-link"></div>
+                    <span class="link-txt">Log In</span>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bar mobile view -->
+        <nav class="nav-mobile-container">
+            <input type="search" class="search" placeholder="Search">
+            <div class="nav-date-details">
+                <input type="date" class="date">
+                <input type="date" class="date">
+                <div class="members">
+                    1 Room  <br>
+                    <label for="guest" style="font-weight: 100;">Guest:</label>
+
+                    <input type="number" class="guest"  min="1" max="12">
+                </div>
+            </div>
+        </nav>
+
+        <!-- content -->
+        
+        <div class="main-container">
+
+            <!-- filter -->
+            <div class="filter-container">
+                <div class=" filter">
+                    <div class="filter-head">FILTER WITH LOCATION</div>
+                    <div class="filter-name">NEAREST LOCATION</div>
+                    <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">Location</label>
+                    <input list="location" name="location" class="location" placeholder="Location">
+
+                        <datalist id="location">
+                        <option value="Alappuzha">
+                        <option value="Calicut">
+                        <option value="Delhi">
+                        <option value="Eranakulam">
+                        <option value="Farooq">
+                        </datalist> <br>
+                    <button class="filter-btn">FILTER</button>
+                </div>
+                <div class="filter">
+                    <div class="filter-head">FILTER WITH PRICE</div>
+                    <div class="filter-name">PRICE</div>
+                    <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">Start Price</label>
+                    <input type="text" placeholder="Minimum Price" class="filter-price">
+                    <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">End Price</label>
+                    <input type="text" placeholder="Minimum Price" class="filter-price">
+                    <button class="filter-btn">FILTER</button>
+                </div>
+                <div class="filter">
+                    <div class="filter-head">FILTER WITH HOTEL</div>
+                    <div class="filter-name">HOTEL</div>
+                    <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">Slect Hotel</label>
+                    <input list="location" name="hotel-name" id="hatel-name" class="location" placeholder="Hotel Name">
+
+                    <datalist id="hotel-name">
+                    <option value="Crowne Plaza">
+                    <option value="Emerald Bay Inn">
+                    <option value="Ramada Limited & Suites">
+                    <option value="Sunset Lodge">
+                    <option value="Hotel Elite">
+                    </datalist> <br>
+                    <button class="filter-btn">FILTER</button>
+                </div>
+            </div>
+
+
+            <div class="content-container">
+                <div class="banner">
+                    Please check the travel advisory issued by the concerned state
+                     government/local authorities before booking, as some places may have COVID-19 related travel/lodging restrictions
+                </div>
+                <span class="heading">OYO Rooms</span>
+
+                <div class="room-list-container">
+
+                    <div class="room-container">
+                        <div class="room-image image-1">
+                            <div class="room-rating">
+                                ★ 4.1 (540)
+                            </div>
+                            <div class="fav">
+                                <img src="./Image/favorite-icon.png" alt="favorite-icon" width="40px">
+                            </div>
+                        </div>
+                        <div class="room-details">
+                            <div class="hotel-name">SPORT ON 78168 Grand Residency</div>
+                            <div class="place">No. 34 Near Rippon Building Periyament Chennai </div>
+                            <div class="fecility">Vaccinated Staff. RT-PCR Report Required</div>
+                            <div class="rate">
+                                <div class="rate-container">
+                                    <span class="current-rate">₹1259</span>
+                                    <span class="actual-rate">₹1575</span>
+                                    <span class="off">47% Off</span>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="room-container">
+                        <div class="room-image image-1">
+                            <div class="room-rating">
+                                ★ 4.1 (540)
+                            </div>
+                            <div class="fav">
+                                <img src="./Image/favorite-icon.png" alt="favorite-icon" width="40px">
+                            </div>
+                        </div>
+                        <div class="room-details">
+                            <div class="hotel-name">SPORT ON 78168 Grand Residency</div>
+                            <div class="place">No. 34 Near Rippon Building Periyament Chennai </div>
+                            <div class="fecility">Vaccinated Staff. RT-PCR Report Required</div>
+                            <div class="rate">
+                                <div class="rate-container">
+                                    <span class="current-rate">₹1259</span>
+                                    <span class="actual-rate">₹1575</span>
+                                    <span class="off">47% Off</span>
+                                </div>
+                             </div>
+                        </div>
+                    </div>    <div class="room-container">
+                        <div class="room-image image-1">
+                            <div class="room-rating">
+                                ★ 4.1 (540)
+                            </div>
+                            <div class="fav">
+                                <img src="./Image/favorite-icon.png" alt="favorite-icon" width="40px">
+                            </div>
+                        </div>
+                        <div class="room-details">
+                            <div class="hotel-name">SPORT ON 78168 Grand Residency</div>
+                            <div class="place">No. 34 Near Rippon Building Periyament Chennai </div>
+                            <div class="fecility">Vaccinated Staff. RT-PCR Report Required</div>
+                            <div class="rate">
+                                <div class="rate-container">
+                                    <span class="current-rate">₹1259</span>
+                                    <span class="actual-rate">₹1575</span>
+                                    <span class="off">47% Off</span>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="room-container">
+                        <div class="room-image image-2">
+                            <div class="room-rating">★ 4.2 (640)</div>
+                            <div class="fav">
+                                <img src="./Image/favorite-icon.png" alt="favorite-icon" width="40px">
+                            </div>
+                        </div>
+                        <div class="room-details">
+                            <div class="hotel-name">SPORT ON 78168 Grand Residency</div>
+                            <div class="place">No. 34 Near Rippon Building Periyament Chennai </div>
+                            <div class="fecility">Vaccinated Staff. RT-PCR Report Required</div>
+                            <div class="rate">
+                                <div class="rate-container">
+                                    <span class="current-rate">₹1259</span>
+                                    <span class="actual-rate">₹1575</span>
+                                    <span class="off">47% Off</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="room-container ">
+                        <div class="room-image image-3">
+                            <div class="room-rating">★ 3.0 (320)</div>
+                            <div class="fav">
+                                <img src="./Image/favorite-icon.png" alt="favorite-icon" width="40px">
+                            </div>
+                        </div>
+                        <div class="room-details">
+                            <div class="hotel-name">SPORT ON 78168 Grand Residency</div>
+                            <div class="place">No. 34 Near Rippon Building Periyament Chennai </div>
+                            <div class="fecility">Vaccinated Staff. RT-PCR Report Required</div>
+                            <div class="rate">
+                                <div class="rate-container">
+                                    <span class="current-rate">₹1259</span>
+                                    <span class="actual-rate">₹1575</span>
+                                    <span class="off">47% Off</span>
+                                </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        </div>
+
+        <div class="bottom-nav">
+            <div class="nav-filter">Filter</div>
+            <div class="nav-sort">Sort</div>
+            <div class="nav-map"><a href="">Map</a></div>
+        </div>
+
+    
+</body>
+</html>
