@@ -62,44 +62,46 @@
 
             <!-- filter -->
             <div class="filter-container">
-                <div class=" filter">
-                    <div class="filter-head">FILTER WITH LOCATION</div>
-                    <div class="filter-name">NEAREST LOCATION</div>
-                    <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">Location</label>
-                    <input list="location" name="location" class="location" placeholder="Location">
-
-                        <datalist id="location">
-                        <option value="Alappuzha">
-                        <option value="Calicut">
-                        <option value="Delhi">
-                        <option value="Eranakulam">
-                        <option value="Farooq">
+                <div class="filter-parent">
+                    <div class=" filter">
+                        <div class="filter-head">FILTER WITH LOCATION</div>
+                        <div class="filter-name">NEAREST LOCATION</div>
+                        <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">Location</label>
+                        <input list="location" name="location" class="location" placeholder="Location">
+    
+                            <datalist id="location">
+                            <option value="Alappuzha">
+                            <option value="Calicut">
+                            <option value="Delhi">
+                            <option value="Eranakulam">
+                            <option value="Farooq">
+                            </datalist> <br>
+                        <button class="filter-btn">FILTER</button>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-head">FILTER WITH PRICE</div>
+                        <div class="filter-name">PRICE</div>
+                        <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">Start Price</label>
+                        <input type="text" placeholder="Minimum Price" class="filter-price">
+                        <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">End Price</label>
+                        <input type="text" placeholder="Minimum Price" class="filter-price">
+                        <button class="filter-btn">FILTER</button>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-head">FILTER WITH HOTEL</div>
+                        <div class="filter-name">HOTEL</div>
+                        <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">Slect Hotel</label>
+                        <input list="location" name="hotel-name" id="hatel-name" class="location" placeholder="Hotel Name">
+    
+                        <datalist id="hotel-name">
+                        <option value="Crowne Plaza">
+                        <option value="Emerald Bay Inn">
+                        <option value="Ramada Limited & Suites">
+                        <option value="Sunset Lodge">
+                        <option value="Hotel Elite">
                         </datalist> <br>
-                    <button class="filter-btn">FILTER</button>
-                </div>
-                <div class="filter">
-                    <div class="filter-head">FILTER WITH PRICE</div>
-                    <div class="filter-name">PRICE</div>
-                    <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">Start Price</label>
-                    <input type="text" placeholder="Minimum Price" class="filter-price">
-                    <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">End Price</label>
-                    <input type="text" placeholder="Minimum Price" class="filter-price">
-                    <button class="filter-btn">FILTER</button>
-                </div>
-                <div class="filter">
-                    <div class="filter-head">FILTER WITH HOTEL</div>
-                    <div class="filter-name">HOTEL</div>
-                    <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">Slect Hotel</label>
-                    <input list="location" name="hotel-name" id="hatel-name" class="location" placeholder="Hotel Name">
-
-                    <datalist id="hotel-name">
-                    <option value="Crowne Plaza">
-                    <option value="Emerald Bay Inn">
-                    <option value="Ramada Limited & Suites">
-                    <option value="Sunset Lodge">
-                    <option value="Hotel Elite">
-                    </datalist> <br>
-                    <button class="filter-btn">FILTER</button>
+                        <button class="filter-btn">FILTER</button>
+                    </div>
                 </div>
             </div>
 
@@ -136,7 +138,7 @@
                         </div>
                     </div>
                     <div class="room-container">
-                        <div class="room-image image-1">
+                        <div class="room-image image-2">
                             <div class="room-rating">
                                 ★ 4.1 (540)
                             </div>
@@ -157,7 +159,7 @@
                              </div>
                         </div>
                     </div>    <div class="room-container">
-                        <div class="room-image image-1">
+                        <div class="room-image image-3">
                             <div class="room-rating">
                                 ★ 4.1 (540)
                             </div>
@@ -179,7 +181,7 @@
                         </div>
                     </div>
                     <div class="room-container">
-                        <div class="room-image image-2">
+                        <div class="room-image image-4">
                             <div class="room-rating">★ 4.2 (640)</div>
                             <div class="fav">
                                 <img src="./Image/favorite-icon.png" alt="favorite-icon" width="40px">
@@ -200,7 +202,7 @@
                     </div>
     
                     <div class="room-container ">
-                        <div class="room-image image-3">
+                        <div class="room-image image-5">
                             <div class="room-rating">★ 3.0 (320)</div>
                             <div class="fav">
                                 <img src="./Image/favorite-icon.png" alt="favorite-icon" width="40px">
