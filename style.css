@@ -145,6 +145,7 @@
     box-sizing: border-box;
     padding-left: 3px;
     margin-top: 2vh;
+    background-color: #FFF;
 }
 .members{
     height: 8vh;
