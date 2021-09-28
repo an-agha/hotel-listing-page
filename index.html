@@ -90,8 +90,8 @@
                     <div class="filter">
                         <div class="filter-head">FILTER WITH HOTEL</div>
                         <div class="filter-name">HOTEL</div>
-                        <label for="location" style="font-size: 7pt; width: 85%; font-weight: 600;">Slect Hotel</label>
-                        <input list="location" name="hotel-name" id="hatel-name" class="location" placeholder="Hotel Name">
+                        <label for="hatel-name" style="font-size: 7pt; width: 85%; font-weight: 600;">Slect Hotel</label>
+                        <input list="hotel-name" name="hotel_name" id="hatel-name" class="location" placeholder="Hotel Name">
     
                         <datalist id="hotel-name">
                         <option value="Crowne Plaza">
@@ -230,11 +230,95 @@
         </div>
 
         <div class="bottom-nav">
-            <div class="nav-filter">Filter</div>
-            <div class="nav-sort">Sort</div>
+            <div class="nav-filter" onclick="showFilter()" >Filter</div>
+            <div class="nav-sort" onclick="showSort()">Sort</div>
             <div class="nav-map"><a href="">Map</a></div>
         </div>
 
+
+        <!-- pop up -->
+
+        <!-- pop-up filter -->
+
+        <div class="filter-popup-container" id="nav_filter">
+            <div class="filter-popup-head">
+                <div class="head-left">
+                    <button class="btn-popup-head" onclick="hideFilter()">&#X2715</button>
+                    <span>FILTER</span>
+                </div>
+            </div>
+            <div class="filter-popup-body">
+                <div class="pop-up-filter">
+                    <label for="checkbox" style="font-size: 11pt; font-weight: 600;">Pay at Hotel</label>
+                    <input type="checkbox" name="pay_at_hotel" id="pay_at_hotel">
+                </div>
+                <div class="pop-up-filter">
+                        <label for="location" style="font-size: 11pt;font-weight: 600;">Location</label>
+                        <input list="location" name="location_popup" class="location-popup" placeholder="Location">
+    
+                            <datalist id="location">
+                            <option value="Alappuzha">
+                            <option value="Calicut">
+                            <option value="Delhi">
+                            <option value="Eranakulam">
+                            <option value="Farooq">
+                        </datalist> 
+                </div>
+                <div class="pop-up-filter">
+                    <label for="min-rate" style="font-size: 11pt;font-weight: 600;">Start Price</label>
+                    <input type="text" placeholder="Min" class="price-popup">
+                    <label for="max-rate" style="font-size: 11pt;  font-weight: 600;">End Price</label>
+                    <input type="text" placeholder="Max" class="price-popup">
+                </div>
+                <div class="hotel-facilities">
+                    <span style="font-size: 11pt; font-weight: 600; margin-bottom: 4vh;">Hotel Facilities</span>
+                    <div class="pop-up-filter">
+                        <label for="checkbox" style="font-size: 11pt; font-weight: 600;">Seating Area</label>
+                        <input type="checkbox" name="seating_area" id="seating_area">
+                    </div>
+                    <div class="pop-up-filter">
+                        <label for="checkbox" style="font-size: 11pt; font-weight: 600;">Balcony</label>
+                        <input type="checkbox" name="balcony" id="balcony">
+                    </div>
+                    <div class="pop-up-filter">
+                        <label for="checkbox" style="font-size: 11pt; font-weight: 600;">King Sized Bed</label>
+                        <input type="checkbox" name="king_sized" id="king_sized">
+                    </div>
+                    <div class="pop-up-filter">
+                        <label for="checkbox" style="font-size: 11pt; font-weight: 600;">Queen Sized Bed</label>
+                        <input type="checkbox" name="queen_sized" id="queen_sized">
+                    </div>
+                </div>
+                <button class="apply-btn">Apply</button>
+            </div>
+        </div>
+
+        <!-- sort pop-up -->
+        <div class="sort-popup-container" id="nav_sort">
+            <div class="sort-popup-head">
+                <div class="head-left">
+                    <button class="btn-popup-head" onclick="hideSort()">&#X2715</button>
+                    <span>SORT</span>
+                </div>
+            </div>
+            <div class="popularity sort-filter">
+                <label for="popularity">Popularity</label>
+                <input type="radio" id="popularity" name="popularity" value="popularity">  
+            </div>
+            <div class="guest-rating sort-filter">
+                <label for="guest-rating">Guest Rating</label>
+                <input type="radio" id="guest-rating" name="guest_rating" value="guest-rating">
+            </div>
+            <div class="low-high sort-filter">
+                <label for="low-high">Price Low To High</label>
+                <input type="radio" id="low-high" name="low_high" value="low-high"> 
+            </div>
+            <div class="high-low sort-filter">
+                <label for="high-low">Price High To Low</label>
+                <input type="radio" id="high-low" name="high_low" value="high-low">
+            </div>
+        </div>
     
 </body>
+<script src="script.js"></script>
 </html>
